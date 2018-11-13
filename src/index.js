@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Link } from "@reach/router";
+import Results from "./result";
 
 import "./styles.css";
 
@@ -18,12 +19,16 @@ const App = () => (
         <li>
           <Link to="about">About</Link>
         </li>
+        <li>
+          <Link to="result">REsults</Link>
+        </li>
       </ul>
     </nav>
     <Router>
       <Home path="/" message="hi this is the Home Page" />
       <Dashboard path="dashboard" />
       <About path="about" />
+      <Results path="/result" />
     </Router>
   </div>
 );
